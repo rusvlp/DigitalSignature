@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="DigtalSignature/MainWindow.axaml" value="DigtalSignature/DigtalSignature.csproj" />
+        <entry key="DigtalSignature/MainWindowStyles.axaml" value="DigtalSignature/DigtalSignature.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

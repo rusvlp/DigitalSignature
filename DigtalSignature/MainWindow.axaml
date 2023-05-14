@@ -1,0 +1,31 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="DigtalSignature.MainWindow"
+        Title="DigtalSignature">
+        
+        <Window.Styles>
+                <StyleInclude Source="/MainWindowStyles.axaml" />
+        </Window.Styles>
+        
+        <Grid
+                RowDefinitions="Auto, Auto, Auto, Auto">
+                <TextBlock Grid.Row = "0" Classes = "ApplicationTag">Цифровая подпись (.NET)</TextBlock>
+                <StackPanel Grid.Row="1" Classes = "Controls" Orientation="Horizontal">
+                        <Label Classes = "Sign">Исходные данные</Label>
+                        <TextBox Classes="TB" Name = "Source"></TextBox>
+                        <Button Click = "SignHandler" Classes = "Btn">Подписать</Button>
+                </StackPanel>
+                <StackPanel Grid.Row="2" Classes = "Controls" Orientation="Horizontal">
+                        <Label Classes = "Sign">Данные для проверки</Label>
+                        <TextBox Classes="TB" Name = "Check"></TextBox>
+                        <Button Name = "CheckBtn" Click = "CheckHandler" Classes = "Btn">Проверить</Button>
+                </StackPanel>
+                <StackPanel Grid.Row = "3" Classes = "Controls" Orientation="Horizontal">
+                        <TextBlock Name = "ResultLabel">Результат проверки: </TextBlock>
+                        <TextBlock Name = "Result"></TextBlock>
+                </StackPanel>
+        </Grid>
+</Window>
